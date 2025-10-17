@@ -17,21 +17,13 @@ Step5 Predict the CO2 emission of a car where the weight is 2300kg, and the volu
 
 ## Program:
 
+<img width="798" height="236" alt="Screenshot 2025-10-17 231850" src="https://github.com/user-attachments/assets/119c5a01-8046-464a-9028-7b4af1ba2cff" />
+
+
 Program for Multivariate Linear Regression
 Developed By:PRADISH PRIYAN S P
 Register Number:25005595
 
-import pandas as pd
-from sklearn import linear_model
-df = pd.read_csv("car.csv")
-X = df[['Weight', 'Volume']]
-y = df['CO2']
-regr = linear_model.LinearRegression()
-regr.fit(X, y)
-print('Coefficients:', regr.coef_)
-print('Intercept:', regr.intercept_)
-predictedCO2 = regr.predict(pd.DataFrame([[3300, 1300]], columns=['Weight', 'Volume']))
-print('Predicted CO2 for the corresponding weight and volume:', predictedCO2)
 
 ## Output:
 
